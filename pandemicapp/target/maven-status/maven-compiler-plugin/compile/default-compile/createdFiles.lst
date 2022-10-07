@@ -1,0 +1,7 @@
+com\pandemica\app\pandemicapp\entity\Patient$PatientBuilder.class
+com\pandemica\app\pandemicapp\Service\PandemicaappService.class
+com\pandemica\app\pandemicapp\util\GeneratePdfReport.class
+com\pandemica\app\pandemicapp\entity\Patient.class
+com\pandemica\app\pandemicapp\repository\PatientRepository.class
+com\pandemica\app\pandemicapp\controller\PandemicaappController.class
+com\pandemica\app\pandemicapp\PandemicappApplication.class
