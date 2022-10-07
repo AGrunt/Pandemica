@@ -1,26 +1,27 @@
 <!DOCTYPE html>
 <html lang="en" xmlns:th="http://www.thymeleaf.org">
-<head>
+<link>
 <meta charset="ISO-8859-1">
 <title>Vaccination booking System</title>
 <link rel="stylesheet"
 	href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
 	integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
 	crossorigin="anonymous">
+	<link rel="stylesheet" href="../static/home.css">
 </head>
 <body>
-	<div class="container">
+	<div class="container main-container">
 		<h1>Vaccination booking System</h1>
 		<hr>
-		<form action="#" th:action="@{/patient/vaccinated}" th:object="${patient}"
+		<form class="form-container" action="#" th:action="@{/patient/vaccinated}" th:object="${patient}"
 			method="POST">
-			<h1> Pandemica your one stop solution for COVID information and services </h1>
+			<h2> Pandemica your one stop solution for COVID information and services </h2>
 			 <h3>Please choose your services...</h3>
             <div class="button-container">
                 <a th:href="@{/patient/findCenter}" class="links">Find Vaccination center</a>
                 <a th:href="@{/patient/register}" class="links">Vaccination Booking</a>
                 <a th:href="@{/patient/pdfreport}" class="links">Vaccination Certificate</a>
-         </div>
+         	</div>
 			<button type="submit" class="btn btn-info col-2">Home</button>
 		</form>
 
