@@ -1,6 +1,6 @@
 # Pandemica
 
-1. Install Java, Add in environmental variables.
+1. Install Java & Maven, Add in environmental variables.
 2. Setup Eclipse/IDE.
 3. Import Project.
 4. Add Mysql, Refer to application.properties file
