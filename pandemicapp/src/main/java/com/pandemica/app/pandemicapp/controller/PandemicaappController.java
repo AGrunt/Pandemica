@@ -20,7 +20,7 @@ import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.servlet.ModelAndView;
 
-import com.pandemica.app.pandemicapp.Service.PandemicaappService;
+import com.pandemica.app.pandemicapp.service.PandemicaappService;
 import com.pandemica.app.pandemicapp.entity.Patient;
 import com.pandemica.app.pandemicapp.util.GeneratePdfReport;
 

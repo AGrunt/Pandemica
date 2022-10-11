@@ -1,4 +1,4 @@
-package com.pandemica.app.pandemicapp.Service;
+package com.pandemica.app.pandemicapp.service;
 
 import java.util.List;
 

@@ -1,0 +1,27 @@
+version: '3.9'
+services:
+  mysql:
+    image: mysql:latest
+    volumes:
+      - db_data:/var/lib/mysql
+    restart: always
+    ports:
+      - "3306:3306"
+    environment:
+      MYSQL_ROOT_PASSWORD: VSG9E2brv3sWrybnCfAbbMHk
+      MYSQL_DATABASE: pandemicdb
+      MYSQL_USER: pandemic
+      MYSQL_PASSWORD: pandemic
+    
+  pandemicapp:
+    image: pandemicapp:0.0.1-SNAPSHOT
+    build: ./pandemicapp
+    depends_on:
+      - mysql
+    ports:
+      - "8082:8082"
+    env_file:
+      - ./pandemicapp-docker.env
+
+volumes:
+  db_data: {}

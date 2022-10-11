@@ -26,8 +26,6 @@ import lombok.NoArgsConstructor;
 @Table(name="patient")
 public class Patient {
 	
-	public Patient() {}
-	
 	public Patient(String name, String emailId, Date date, String venue, boolean vaccinated) {
 		super();
 		this.name = name;
